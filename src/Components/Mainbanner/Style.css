@@ -1,0 +1,145 @@
+.main{
+      
+      height: 700px;
+      background-image: url('../../Assests/mainbannerbackground.png');
+      background-repeat: no-repeat;
+      background-size:contain;
+      border: none;
+      border-radius:0px;
+      overflow-x: hidden;
+}
+
+.head{
+
+       font-size: 35px;
+       color: #005049;
+       margin-top: -10px;
+}
+
+.big{
+
+     font-size: 120px;
+     font-weight: 700;
+     margin-left: 150px;
+     color: #005049;
+     stroke: 10px #505050;
+}
+
+.side{
+
+     font-size: 30px;
+   
+}
+
+.side2{
+    font-size: 70px;
+    color:#3388EC;
+    margin-left: 180px;
+    font-weight: 700;
+}
+
+.containercontry {
+
+      width: 700px;
+      height: 80px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 20px;
+      border-radius: 20px;
+      margin-top: 20px;
+      margin-left: 280px;
+      box-shadow: 1px 2px 9px #e1e1e1;
+
+}
+
+.line {
+
+      width: 2px;
+      height: 30px;
+      background-color: #c8c6c6;
+
+
+}
+
+
+.arrowbtn {
+
+      width: 170px;
+      height: 80px;
+      background-color: #005049;
+      justify-content: center;
+      align-items: center;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: #005049;
+
+
+}
+.arrowicon{
+      
+      color:"#fff";
+      margin-top:"8px"
+}
+
+
+
+@media only screen and (max-width: 600px) {
+   
+
+
+    .big{
+
+      font-size: 10px;
+      font-weight: 700;
+      margin-right: 40px;
+      color: #005049;
+      stroke: 10px #505050;
+    }
+    .head{
+      font-size: 5px;
+      color: #005049;
+      margin-top: 10px;
+
+    }
+    .containercontry{
+
+
+      width: 260px;
+      height: 50px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 20px;
+      border-radius: 20px;
+      margin-top: -90px;
+      margin-left: -10px;
+      box-shadow: 1px 2px 9px #e1e1e1;
+
+    }
+    .arrowbtn{
+
+      width: 60px;
+      height: 50px;
+      background-color: #005049;
+      justify-content: center;
+      align-items: center;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: #005049;
+
+    }
+    .arrowicon{
+
+      color:"#fff";
+      margin-top:2px;
+      width: 20px;
+      height: 12px ;
+    }
+  
+  }
+

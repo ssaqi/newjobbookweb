@@ -1,0 +1,23 @@
+.dis{
+
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
+
+.logo{
+
+      width: 110px;
+      height: 35px;
+}
+
+
+@media only screen and (max-width: 600px) {
+     /* .dis{
+
+         display: flex;
+         flex-direction: row;
+         scroll-behavior: smooth;
+         
+     } */
+    }
