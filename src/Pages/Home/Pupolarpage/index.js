@@ -1,6 +1,8 @@
 import React from 'react';
 import './Styles.css';
-
+import ICON from '../../../Assests/categeryicon.png'
+import ICONn from '../../../Assests/locationIco.png'
+import Search from '../../../Assests/seachIcon.png'
 const JobCard = ({ title, count }) => {
     return (
         <div className="col">
@@ -50,9 +52,10 @@ function Popularjob() {
 
                         <div style={{ display: "flex", flexDirection: "row" }}>
                             <div className='icon'>
-                                <p>
-                                    i
-                                </p>
+                                <img
+                                 src={ICON}
+                                 style={{width:"20px",marginTop:5}}
+                                />
                             </div>
                             <input type='text'
                                 placeholder='Category'
@@ -65,9 +68,10 @@ function Popularjob() {
                         </div>
                         <div style={{ display: "flex", flexDirection: "row" }}>
                             <div className='icon'>
-                                <p>
-                                    i
-                                </p>
+                            <img
+                                 src={ICONn}
+                                 style={{width:"14px",marginTop:5}}
+                                />
                             </div>
                             <input type='text'
                                 placeholder='Location'
@@ -78,7 +82,11 @@ function Popularjob() {
 
                         <div className='searchbtn'>
                         <button type="button" className="btn btn-success searchbtn">
-                        icon Search
+                        <img
+                                 src={Search}
+                                 style={{width:"14px",marginTop:5}}
+                                />
+                         <span style={{marginLeft:5}}>Search</span>
                         </button>
                         </div>
 

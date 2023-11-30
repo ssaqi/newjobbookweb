@@ -65,7 +65,7 @@ const JobCard = ({ title, location, count, imageUrl,description }) => {
           <h6 className='text-start mx-5'>Find the following job that suits you and apply now</h6>
         </div>
         <div style={{ marginRight: "60px" }} >
-          <button type="button" className="btn btn-success mx-5 searchbtn">
+          <button type="button" className="btn btn-success mx-5 recent">
             Recent
           </button>
           <button type="button" className="btn btn-outline-success save">

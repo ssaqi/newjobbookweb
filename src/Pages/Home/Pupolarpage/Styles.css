@@ -1,14 +1,14 @@
-.brdr{
+.brdr {
 
-     border: solid 1px #18BBAB;
-     height: 56px;
-     width: 280px;
-     border-radius: 30px;
-     align-items: center;
-     
+       border: solid 1px #18BBAB;
+       height: 56px;
+       width: 280px;
+       border-radius: 30px;
+       align-items: center;
+
 }
 
-.con{
+.con {
 
        width: 60px;
        height: 25px;
@@ -19,36 +19,33 @@
        color: #fff;
 }
 
-.containerStyle{
+.containerStyle {
 
-    
-     height: 145vh;
-       /* height: "145vh", */
+
+       height: 145vh;
        background-image: url('../../../Assests/Search.png');
        background-repeat: no-repeat;
        background-size: cover;
-       /* background-position: center; */
-  
        padding-top: 10%;
-   
+
 
 }
 
-.containerjob{
+.containerjob {
 
 
-        width: 900px;
-        height: 60px;
-        background-color: #ffffff;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 30px;
-        box-shadow: 1px 2px 9px #e1e1e1;
+       width: 900px;
+       height: 60px;
+       background-color: #ffffff;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: center;
+       border-radius: 30px;
+       box-shadow: 1px 2px 9px #e1e1e1;
 }
 
-.icon{
+.icon {
 
        width: 48px;
        height: 35px;
@@ -57,9 +54,12 @@
        justify-content: center;
        align-items: center;
 }
-.searchbtn{
+
+.searchbtn {
 
        background-color: #18BBAB;
        border-radius: 20px;
        border: none;
+       display: flex;
+       flex-direction: row;
 }

@@ -19,7 +19,7 @@
 .save{
 
     width: 80px;
-    height: 36px;
+    /* height: 35px; */
     border: solid 1px #18BBAB;
     border-radius: 30px;
     align-items: center;
@@ -83,4 +83,19 @@
      flex-direction: "row";
       margin-top: "-20px";
       margin-left:"12%" 
-    }
+}
+
+.recent{
+    width: 80px;
+    /* height: 35px; */
+    border: none;
+    background-color: #18BBAB;
+    border-radius: 30px;
+    align-items: center;
+    justify-content:center;
+    margin-left: 10px;
+    color: #ffffff;
+    box-shadow: 1px 2px 9px #e1e1e1;
+
+
+}
