@@ -7,11 +7,14 @@ import Popularjob from './Pupolarpage'
 import Availablejobs from './Availablejob'
 import Availableplatform from './platformavailable'
 import Aboutapplication from './Applicationavailable'
+import Nav from '../../Config/Navigation'
+import Footer from '../../Components/Footer'
 
 
 function Homepage() {
   return (
     <div>
+      <Nav/>
       <Mainbannar/>
       <Clientpage/>
       <Worthpage/>
@@ -20,6 +23,7 @@ function Homepage() {
       <Availablejobs/>
       <Availableplatform/>
       <Aboutapplication/>
+      <Footer/>
     </div>
   )
 }

@@ -24,11 +24,11 @@ const JobCard = ({ title, location, count, imageUrl,description }) => {
           <div className="card-body cdbody" >
             <div style={{ display: "flex", flexDirection: "row",justifyContent:"space-between", alignItems: "center" }}>
               <img src={imageUrl} alt={`${title} profile`} style={{ width: "40px", height: "40px", borderRadius: "50%", }} />
-              <p className='card-tittle text-start' style={{marginRight:"140px",fontSize:15,fontWeight:"bold",padding:10}}>{title}</p>
+              <p className='card-tittle text-start ' style={{marginRight:"140px",fontSize:15,fontWeight:"bold",padding:10}}>{title}</p>
               <div style={{display:"flex",flexDirection:"row", }}>
                 <div>
                   
-                <button className="btn btn-outline-success save"> {count}</button>
+                <button className="btn btn-outline-success save"  style={{justifyContent:"space-between"}}> {count}</button>
                 </div>
               
               </div>
@@ -68,7 +68,7 @@ const JobCard = ({ title, location, count, imageUrl,description }) => {
           <button type="button" className="btn btn-success mx-5 recent">
             Recent
           </button>
-          <button type="button" className="btn btn-outline-success save">
+          <button type="button" className="btn btn-outline-success popular ">
             Popular
           </button>
         </div>
@@ -76,11 +76,13 @@ const JobCard = ({ title, location, count, imageUrl,description }) => {
 
       <div className='container-fluid '>
         <div className='container d-flex' style={{ marginTop: 50 }} >
+          <center>
           <div className="row row-cols-1 row-cols-md-3 g-4">
           {jobData.map((job) => (
               <JobCard key={job.id} title={job.title} location={job.location} count={job.count} imageUrl={job.imageUrl} description={job.description} />
             ))}
           </div>
+          </center>
         </div>
         <p style={{marginTop:"120px"}}>Show all jobs</p>
       </div>

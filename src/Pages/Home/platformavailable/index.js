@@ -3,10 +3,10 @@ import Demo from '../../../Assests/demo.png'
 import './Styles.css'
 function Availableplatform() {
   return (
-    <div className='container-fluid'>
+    <div className='container-fluid '>
  <div className="card" style={{ width: "100%",border:"none",marginTop:"30px" }}>
- <div className="card" style={{border:"none"}}>
- <div className="card-body ms-auto" style={{width:"80%",backgroundColor:"#0DC3B1",borderBottomLeftRadius:"60px",borderTopLeftRadius:"60px"}}>
+ <div className="card " style={{border:"none"}}>
+ <div className="card-body ms-auto platform" >
   <div className="row">
   <div className="col-sm-6 mb-3 mb-sm-0">
     <div className="card" style={{backgroundColor:"#0DC3B1",border:"none"}}>

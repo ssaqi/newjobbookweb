@@ -41,11 +41,11 @@ function Popularjob() {
     return (
         <div className='containerStyle'>
             <div className="cardnh" style={{ width: "100%", }}>
-                <h1 className='card-title text-center' style={{ fontSize: 48, fontWeight: "700", color: "#005049" }}>
+                <h1 className='card-title text-center txtlook'>
                     Looking for a job now
                 </h1>
                 <br />
-                <h6>Type in the name of the position, company or job category you are looking for</h6>
+                <h6 className='card-title'>Type in the name of the position, company or job category you are looking for</h6>
 
                 <center>
                     <div className='containerjob' >
@@ -54,7 +54,8 @@ function Popularjob() {
                             <div className='icon'>
                                 <img
                                  src={ICON}
-                                 style={{width:"20px",marginTop:5}}
+                                 className='smlicon'
+                                 
                                 />
                             </div>
                             <input type='text'
@@ -70,7 +71,8 @@ function Popularjob() {
                             <div className='icon'>
                             <img
                                  src={ICONn}
-                                 style={{width:"14px",marginTop:5}}
+                                 className='smlicon'
+                                
                                 />
                             </div>
                             <input type='text'
@@ -96,6 +98,7 @@ function Popularjob() {
             <div style={{ marginTop: 50 }}>
                 <h5>Popular Jobs</h5>
             </div>
+            <center>
             <div className='container d-flex' style={{ marginTop: 50 }} >
                 <div className="row row-cols-1 row-cols-md-4 g-4">
                     {jobData.map((job) => (
@@ -104,6 +107,7 @@ function Popularjob() {
                 </div>
 
             </div>
+            </center>
             <div style={{ marginTop: 50 }}>
                 <h5>More Categories </h5>
             </div>

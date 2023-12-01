@@ -1,6 +1,7 @@
 import React from 'react'
 import LOGO from '../../Assests/logo.png'
 import './Style.css'
+import { Link } from 'react-router-dom'
 
 function Nav() {
     return (
@@ -24,9 +25,10 @@ function Nav() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">
+                                <Link to={"/"}
+                                 className="nav-link" aria-current="page" href="#">
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">
@@ -35,7 +37,7 @@ function Nav() {
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">
-                                    Test
+                                    Training
                                 </a>
                             </li>
                             <li className="nav-item dropdown">
@@ -51,9 +53,12 @@ function Nav() {
                         </ul>
                         <form className="d-flex" role="search">
                             <>
-                                <button type="button" className="btn btn-success btnnn" >
+                          
+                               <button type="button" className="btn btn-success btnnn" >
                                 Sign Up
                                 </button>
+                               
+                                
                                 <button type="button" className="btn btn-success btnnn" style={{marginLeft:"20px"}}>
                                 Login
                                 </button>

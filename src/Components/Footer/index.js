@@ -86,31 +86,31 @@ function Footer() {
                                     <li className="mb-2" >
                                         <a href="#!" className="text-white" style={{ textDecoration: "none" }}>
                                             <i className="fas fa-paw pe-3" />
-                                            Platform
+                                            Home
                                         </a>
                                     </li>
                                     <li className="mb-2">
                                         <a href="#!" className="text-white" style={{ textDecoration: "none" }}>
                                             <i className="fas fa-paw pe-3" />
-                                            Solutions
+                                            Jobs
                                         </a>
                                     </li>
                                     <li className="mb-2">
                                         <a href="#!" className="text-white" style={{ textDecoration: "none" }}>
                                             <i className="fas fa-paw pe-3" />
-                                            Resources
+                                            Test
                                         </a>
                                     </li>
                                     <li className="mb-2">
                                         <a href="#!" className="text-white" style={{ textDecoration: "none" }}>
                                             <i className="fas fa-paw pe-3" />
-                                            Pricing
+                                            Premium
                                         </a>
                                     </li>
                                     <li className="mb-2">
                                         <a href="#!" className="text-white" style={{ textDecoration: "none" }}>
                                             <i className="fas fa-paw pe-3" />
-                                            Contact Sales
+                                            Create Resume
                                         </a>
                                     </li>
                                 </ul>
@@ -141,7 +141,7 @@ function Footer() {
                                     <li className="mb-2">
                                         <a href="#!" className="text-white" style={{ textDecoration: "none" }}>
                                             <i className="fas fa-paw pe-3" />
-                                            Paper Card
+                                           lorem spam
                                         </a>
                                     </li>
                                     {/* <li className="mb-2">
@@ -223,18 +223,18 @@ function Footer() {
                                 </a>
                             </div>
                     <div
-                        className="text-center p-1"
+                        className="text-center p-1 terms"
                         style={{ backgroundColor: "#005049", fontWeight: "bold" , display:"flex",marginLeft:10, flexDirection:"row",alignItems:"center",justifyContent:"center" }}
                     >
                       
                      
 
-                        <li>Security & fraud </li>
+                        {/* <li>Security & fraud </li>
                         <li>Privacy policy  </li>
                         <li>Terms of Use </li>
                         <li>Beware of Fraudsters </li>
                         <li>Be Safe </li>
-                        <li>Complaints </li>
+                        <li>Complaints </li> */}
 
                     </div>
                     <hr/>

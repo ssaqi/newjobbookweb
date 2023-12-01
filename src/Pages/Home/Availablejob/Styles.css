@@ -99,3 +99,54 @@
 
 
 }
+
+.popular{
+
+    width: 80px;
+    /* height: 35px; */
+    border: solid 1px #18BBAB;
+    border-radius: 30px;
+    align-items: center;
+    justify-content:center;
+    color: #18BBAB;
+    box-shadow: 1px 2px 9px #e1e1e1;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .container-fluid.buttoncon {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .recent-buttons {
+      margin-top: 10px;
+    }
+  
+    .card.crdbdy {
+      width: 300px;
+    }
+  
+    .maincardcon {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mnage {
+      margin-left: 0;
+    }
+
+    .save{
+
+        width: 80px;
+        /* height: 35px; */
+        border: solid 1px #18BBAB;
+        border-radius: 30px;
+        align-items: center;
+        justify-content:center;
+        color: #18BBAB;
+        box-shadow: 1px 2px 9px #e1e1e1;
+        margin-left: -80px;
+    }
+  }
+  

@@ -1,4 +1,29 @@
-.image{
-
+.image {
       height: 20%;
-}
+    }
+
+    .googlebutton{ 
+      width: 180px;
+      background-color: "#C3EEE9" }
+    
+    @media only screen and (max-width: 600px) {
+      .image {
+        height: auto;
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .playstorebutton{
+
+           flex-direction: column;
+           justify-content: center;
+            
+      }
+      .googlebutton{ 
+            width: 130px;
+            background-color: "#C3EEE9";
+            justify-content: center;
+      }
+    }
+    
