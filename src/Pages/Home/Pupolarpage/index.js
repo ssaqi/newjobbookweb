@@ -60,8 +60,8 @@ function Popularjob() {
                             </div>
                             <input type='text'
                                 placeholder='Category'
-                                className='form-control'
-                                style={{ border: "none", marginLeft: "20px" }}
+                                className='form-control inpp'
+                                // style={{ border: "none", marginLeft: "20px" }}
                             />
                         </div>
                         <div className='line'>
@@ -77,8 +77,8 @@ function Popularjob() {
                             </div>
                             <input type='text'
                                 placeholder='Location'
-                                className='form-control'
-                                style={{ border: "none", marginLeft: "20px" }}
+                                className='form-control inpp'
+                               
                             />
                         </div>
 

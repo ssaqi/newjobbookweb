@@ -65,71 +65,81 @@
 }
 
 
-.txtlook{
+.txtlook {
 
-     font-size :48px;
-     font-weight: 700;
-      color: #005049
+       font-size: 48px;
+       font-weight: 700;
+       color: #005049
 }
 
-.smlicon{
+.smlicon {
 
-         width: 15px;
-         margin-top: 5px;
+       width: 15px;
+       margin-top: 5px;
+}
+
+.inpp{
+
+       border: none;
+       margin-left: 20px 
 }
 
 @media only screen and (max-width: 600px) {
        .containerStyle {
-         height: 1900px;
-         background-image: url('../../../Assests/Search.png');
-         background-repeat: no-repeat;
-         /* background-size: center; */
-         /* padding-top: 10%; */
-         align-items: center;
-         justify-content: center;
-       }
-     
-       .containerjob {
-         width: 300px;
-         height: 140px;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         border-radius: 30px;
-         box-shadow: 1px 2px 9px #e1e1e1;
-       }
-     
-       .inputContainer {
-         display: flex;
-         flex-direction: row;
-         width: 80%;
-         /* margin-top: 10px; */
-       }
-     
-       .icon {
-         width: 28px;
-         height: 25px;
-         background-color: #18BBAB;
-         border-radius: 50%;
-         margin-top: 10px;
-         justify-content: center;
-         align-items: center;
+              height: 1900px;
+              background-image: url('../../../Assests/Search.png');
+              background-repeat: no-repeat;
+              /* background-size: center; */
+              /* padding-top: 10%; */
+              align-items: center;
+              justify-content: center;
        }
 
-       .smlicon{
+       .containerjob {
+              width: 300px;
+              height: 140px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              border-radius: 30px;
+              box-shadow: 1px 2px 9px #e1e1e1;
+       }
+
+       .inputContainer {
+              display: flex;
+              flex-direction: row;
+              width: 80%;
+              /* margin-top: 10px; */
+       }
+
+       .icon {
+              width: 28px;
+              height: 25px;
+              background-color: #18BBAB;
+              border-radius: 50%;
+              margin-top: 10px;
+              justify-content: center;
+              align-items: center;
+       }
+
+       .smlicon {
 
               width: 12px;
               margin-top: -3px;
        }
-     
+
        .searchbtn {
               background-color: #18BBAB;
        }
-       .txtlook{
 
-       font-size :18px;
-     font-weight: 700;
-      color: #005049 
+       .txtlook {
+
+              font-size: 18px;
+              font-weight: 700;
+              color: #005049
        }
-     }
-     
+       .inpp{
+
+             border: #005049;
+       }
+}

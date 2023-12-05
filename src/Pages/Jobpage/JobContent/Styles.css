@@ -1,0 +1,19 @@
+.companyprofile{
+
+        width: 130px;
+        height: 60px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFF;
+}
+.view{
+
+      width: 220px;
+      height: 110px;
+      background-color: rgb(255, 255, 255);
+      border: solid 1px #d2d2d2;
+      font-size: 13px;
+      justify-content: flex-start;
+      font-weight: 500;
+}

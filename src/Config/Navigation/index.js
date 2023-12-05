@@ -31,37 +31,39 @@ function Nav() {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">
+                                <Link to={'/job'} className="nav-link" href="#">
                                     Jobs
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">
+                                <Link to={'/training'} className="nav-link" href="#">
                                     Training
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link " href="#" >
+                                <Link to={'/premium'} className="nav-link " href="#" >
                                     Premium
-                                </a>
+                            </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link " href="#">
+                                <Link to={'/resume'} className="nav-link " href="#">
                                     Create Resume
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <form className="d-flex" role="search">
                             <>
-                          
+                               <Link to={'/singup'}>
                                <button type="button" className="btn btn-success btnnn" >
                                 Sign Up
                                 </button>
-                               
+                                </Link> 
                                 
+                                <Link to={'/login'}>
                                 <button type="button" className="btn btn-success btnnn" style={{marginLeft:"20px"}}>
                                 Login
                                 </button>
+                                </Link>
                             </>
 
                         </form>
