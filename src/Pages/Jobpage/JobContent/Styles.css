@@ -17,3 +17,13 @@
       justify-content: flex-start;
       font-weight: 500;
 }
+
+.jobcard{
+      height:900px;
+      overflow-y: scroll;
+}
+
+.jobcard::-webkit-scrollbar {
+      width: 3px;
+      background-color: #30BDB0;
+    }

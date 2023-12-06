@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Styles.css';
 import Companylogo from '../../../Assests/C.png';
+import Bell from '../../../Assests/bellicon.png'
+import ApplyModal from '../../../Components/Applyjobmodal';
+import { Button } from 'react-bootstrap';
 
 const jobsData = [
     {
@@ -9,7 +12,7 @@ const jobsData = [
         location: 'Austin, TX, US',
         description: 'Lorem ipsum dolor. With supporting text below as a natural lead-in to additional content. Be an early applicant.',
         imageUrl: Companylogo,
-        postedDate: '2 days ago',
+        postedDate: 'Software engineer in Austin, Texas',
     },
     {
         id: 2,
@@ -17,7 +20,7 @@ const jobsData = [
         location: 'Austin, TX, US',
         description: 'Lorem ipsum dolor. With supporting text below as a natural lead-in to additional content. Be an early applicant.',
         imageUrl: Companylogo,
-        postedDate: '2 days ago',
+        postedDate: 'Software engineer in Austin, Texas',
     },
     {
         id: 3,
@@ -25,7 +28,7 @@ const jobsData = [
         location: 'Austin, TX, US',
         description: 'Lorem ipsum dolor. With supporting text below as a natural lead-in to additional content. Be an early applicant.',
         imageUrl: Companylogo,
-        postedDate: '2 days ago',
+        postedDate: 'Software engineer in Austin, Texas',
     },
     {
         id: 4,
@@ -33,7 +36,7 @@ const jobsData = [
         location: 'Austin, TX, US',
         description: 'Lorem ipsum dolor. With supporting text below as a natural lead-in to additional content. Be an early applicant.',
         imageUrl: Companylogo,
-        postedDate: '2 days ago',
+        postedDate: 'Software engineer in Austin, Texas',
     },
     {
         id: 5,
@@ -41,7 +44,7 @@ const jobsData = [
         location: 'Austin, TX, US',
         description: 'Lorem ipsum dolor. With supporting text below as a natural lead-in to additional content. Be an early applicant.',
         imageUrl: Companylogo,
-        postedDate: '2 days ago',
+        postedDate: 'Software engineer in Austin, Texas',
     },
     {
         id: 6,
@@ -49,7 +52,7 @@ const jobsData = [
         location: 'Austin, TX, US',
         description: 'Lorem ipsum dolor. With supporting text below as a natural lead-in to additional content. Be an early applicant.',
         imageUrl: Companylogo,
-        postedDate: '2 days ago',
+        postedDate: 'Software engineer in Austin, Texas',
     },
     {
         id: 7,
@@ -57,7 +60,7 @@ const jobsData = [
         location: 'Austin, TX, US',
         description: 'Lorem ipsum dolor. With supporting text below as a natural lead-in to additional content. Be an early applicant.',
         imageUrl: Companylogo,
-        postedDate: '2 days ago',
+        postedDate: 'Software engineer in Austin, Texas',
     },
     {
         id: 8,
@@ -65,7 +68,7 @@ const jobsData = [
         location: 'Austin, TX, US',
         description: 'Lorem ipsum dolor. With supporting text below as a natural lead-in to additional content. Be an early applicant.',
         imageUrl: Companylogo,
-        postedDate: '2 days ago',
+        postedDate: 'Software engineer in Austin, Texas',
     },
 
     {
@@ -74,7 +77,7 @@ const jobsData = [
         location: 'Austin, TX, US',
         description: 'Lorem ipsum dolor. With supporting text below as a natural lead-in to additional content. Be an early applicant.',
         imageUrl: Companylogo,
-        postedDate: '2 days ago',
+        postedDate: 'Software engineer in Austin, Texas',
     },
     {
         id: 10,
@@ -82,34 +85,56 @@ const jobsData = [
         location: 'Austin, TX, US',
         description: 'Lorem ipsum dolor. With supporting text below as a natural lead-in to additional content. Be an early applicant.',
         imageUrl: Companylogo,
-        postedDate: '2 days ago',
+        postedDate: 'Software engineer in Austin, Texas',
     },
     // Add more job objects as needed
 ];
 
 function Jobcontent() {
     const [selectedJob, setSelectedJob] = useState(null);
+    const [showModal, setShowModal] = useState(false);
 
     const handleJobClick = (job) => {
         setSelectedJob(job);
     };
+    const handleApplyClick = () => {
+        setShowModal(true);
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+    };
+
 
     return (
         <div className='container my-5'>
             <div className='row'>
                 <div className='col-sm-6 mb-3 mb-sm-0'>
-                    <div className='card' style={{height:"900px",overflowY:"scroll"}}>
+                    <div className='card jobcard'>
                         <div className='card-body'>
                             <div className='d-flex'>
-                                <div className='card-footer text-body-secondary'>{selectedJob ? selectedJob.postedDate : '2 days ago'}</div>
+                                <div className=' d-flex card-footer text-body-secondary'>
+                                    {selectedJob ? selectedJob.postedDate : 'Software engineer in Austin, Texas' }
+                                   <div className='d-flex mx-5' style={{justifyContent:"center",alignItems:"center"}}>
+                                     <img
+                                     src={Bell}
+                                     style={{width:"20%",height:"20%",marginBottom:"15px"}}
+                                     />
+                                    <p className='text-center mx-1' style={{fontSize:"12px"}}>Job alert</p>
+                                  
+                                   </div>
+                                   <div className='d-flex'  style={{justifyContent:"center",alignItems:"center"}}>
+                                   <p className=''>iocn</p>
+                                    <p className='text-end mx-1 '>Job alert</p>
+                                  
+                                   </div>
+                                </div>
                             </div>
                             {jobsData.map((job) => (
                                 <div key={job.id} className='card mb-3' onClick={() => handleJobClick(job)}>
                                     <div className='card-body'>
                                         <div className='d-flex mx-3 m-3'>
-                                            <div className='companyprofile'>
-                                                <img src={job.imageUrl} style={{ width: '40%', marginTop: '10px' }} alt='Company Logo' />
-                                            </div>
+                                        
                                             <div>
                                                 <h5 className='card-title text-start mx-3'>{job.title}</h5>
                                                 <p className='card-title text-start mx-3' style={{ marginTop: '-6px' }}>
@@ -154,9 +179,11 @@ function Jobcontent() {
                                 <a href='#' className='btn btn-success recent me-3'>
                                     Save
                                 </a>
-                                <a href='#' className='btn btn-success recent mx-2'>
-                                    Apply
-                                </a>
+                                {selectedJob && (
+                            <Button variant='success' className='recent mx-2' onClick={handleApplyClick}>
+                                Apply
+                            </Button>
+                        )}
                                 <div className='d-flex my-3 '>
                                     <div className='view'>
                                         <h6 className='card-title text-start mx-3'>Job</h6>
@@ -259,7 +286,11 @@ function Jobcontent() {
                                     </div>
 
                                 </div>
-
+                                <ApplyModal
+                    showModal={showModal}
+                    handleCloseModal={handleCloseModal}
+                    jobTitle={selectedJob ? selectedJob.title : ''}
+                />
 
                             </div>
                         </div>
